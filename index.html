@@ -10,17 +10,32 @@
 
 <body class="bg-black text-white font-sans">
 
-    <!-- Header -->
-    <header class="flex justify-between items-center p-6 border-b border-gray-800">
-        <h1 class="text-xl font-bold text-green-500">Yuri Rocha | Websites para Negócios</h1>
-        <a href="#contato" class="bg-green-500 px-4 py-2 rounded-xl text-black font-semibold">Fale comigo</a>
+    <!-- 🔹 NAVBAR NOVA -->
+    <header class="fixed top-0 left-0 w-full bg-black/80 backdrop-blur border-b border-gray-800 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl md:text-2xl font-bold text-green-500">
+                Yuri Rocha | Sites para Negócios
+            </h1>
+
+            <nav class="hidden md:flex gap-6 text-gray-300">
+                <a href="#inicio" class="hover:text-green-500 transition">Início</a>
+                <a href="#sobre" class="hover:text-green-500 transition">Quem sou eu</a>
+                <a href="#benefícios" class="hover:text-green-500 transition">Benefícios</a>
+                <a href="#portfolio" class="hover:text-green-500 transition">Portfólio</a>
+                <a href="#contato" class="hover:text-green-500 transition">Contato</a>
+            </nav>
+
+            <a href="https://wa.me/5511925356630"
+                class="bg-green-500 px-4 py-2 rounded-xl text-black font-semibold hover:scale-105 transition">
+                Fale comigo
+            </a>
+        </div>
     </header>
 
-    <!-- Hero -->
-    <section class="py-10 px-6">
+    <!-- 🔹 HERO -->
+    <section id="inicio" class="pt-28 py-10 px-6">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
-            <!-- Texto -->
             <div>
                 <h2 class="text-4xl md:text-5xl font-bold mb-6 text-green-500">
                     Sites que geram clientes para negócios locais
@@ -35,144 +50,222 @@
                     class="bg-green-500 px-6 py-3 rounded-xl text-black font-semibold inline-block hover:scale-105 transition">
                     Falar no WhatsApp
                 </a>
-
             </div>
 
-            <!-- Imagem -->
             <div class="flex flex-col items-center">
-
-                <img src="src/1.png"
-                    class="rounded-2xl shadow-lg w-full max-w-md hover:scale-105 transition duration-300"
-                    alt="Criação de sites">
+                <img src="src/10.png"
+                    class="rounded-2xl shadow-lg w-full max-w-md hover:scale-105 transition duration-300">
 
                 <p class="text-sm text-gray-400 mt-4 text-center max-w-md">
-                    Cliente <span class="text-green-400 font-semibold">Psicóloga Klicya Queiroz</span> satisfeita com o
-                    site profissional que criei para o consultório dela, atraindo mais pacientes todos os dias.
+                    Um site de
+                    alta conversão filtra os curiosos e atrai apenas os clientes que valorizam o seu ticket médio. <span
+                        class="text-green-400 font-semibold"> Se o
+                        seu site não vende autoridade, você está perdendo dinheiro para a concorrência. </span>
                 </p>
 
-            </div>
 
+
+            </div>
 
         </div>
     </section>
 
-    <!-- Benefícios -->
-    <section class="py-16 px-6">
+
+    <!-- 🔥 SOBRE MIM -->
+    <section id="sobre" class="py-20 px-6 bg-gray-900">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- FOTO -->
+            <div class="flex justify-center">
+                <img src="src/y.png"
+                    class="rounded-2xl shadow-lg w-full max-w-sm hover:scale-105 transition duration-300">
+            </div>
+
+            <!-- TEXTO -->
+            <div>
+                <span class="text-green-400 font-semibold uppercase text-sm">Quem sou eu</span>
+
+                <h2 class="text-4xl font-bold mt-2 mb-6 text-green-500">
+                    Prazer, eu sou o Yuri Rocha
+                </h2>
+
+                <p class="text-gray-400 mb-4">
+                    Sou desenvolvedor especializado em criar sites para negócios locais que querem atrair mais clientes
+                    todos os dias através da internet.
+                </p>
+
+                <p class="text-gray-400 mb-4">
+                    Mais do que um site bonito, meu foco é construir uma ferramenta estratégica que gere resultados
+                    reais,
+                    transformando visitantes em clientes através de design moderno, velocidade e técnicas de conversão.
+                </p>
+
+                <p class="text-gray-400 mb-6">
+                    Já ajudei diversos profissionais a saírem do zero no digital e aumentarem sua presença online com
+                    páginas que realmente funcionam.
+                </p>
+
+                <a href="https://wa.me/5511925356630"
+                    class="bg-green-500 px-6 py-3 rounded-xl text-black font-semibold inline-block hover:scale-105 transition">
+                    Falar comigo
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 🔹 BENEFÍCIOS -->
+    <section id="benefícios" class="py-16 px-6">
+        <h2 class="text-4xl font-bold text-center mb-12 text-green-400">
+            Benefícios
+        </h2>
+
         <div class="grid md:grid-cols-3 gap-8 text-center">
 
-            <!-- Card 1 -->
             <div
                 class="p-6 border border-gray-800 rounded-2xl hover:scale-105 hover:border-green-500 transition-all duration-300">
-                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="clientes"
-                    class="w-16 mx-auto mb-4">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="w-16 mx-auto mb-4">
                 <h3 class="text-xl font-semibold mb-2 text-green-400">Mais Clientes</h3>
-                <p class="text-gray-400">Apareça para quem realmente está procurando seu serviço e aumente suas vendas.
-                </p>
+                <p class="text-gray-400">Apareça para quem realmente está procurando seu serviço.</p>
             </div>
 
-            <!-- Card 2 -->
             <div
                 class="p-6 border border-gray-800 rounded-2xl hover:scale-105 hover:border-green-500 transition-all duration-300">
-                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="confiança"
-                    class="w-16 mx-auto mb-4">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" class="w-16 mx-auto mb-4">
                 <h3 class="text-xl font-semibold mb-2 text-green-400">Mais Confiança</h3>
-                <p class="text-gray-400">Um site profissional aumenta sua credibilidade e faz o cliente escolher você.
-                </p>
+                <p class="text-gray-400">Um site profissional aumenta sua credibilidade.</p>
             </div>
 
-            <!-- Card 3 -->
             <div
                 class="p-6 border border-gray-800 rounded-2xl hover:scale-105 hover:border-green-500 transition-all duration-300">
-                <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="resultados"
-                    class="w-16 mx-auto mb-4">
+                <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" class="w-16 mx-auto mb-4">
                 <h3 class="text-xl font-semibold mb-2 text-green-400">Mais Resultados</h3>
-                <p class="text-gray-400">Transforme visitas em clientes todos os dias com uma estrutura estratégica.</p>
+                <p class="text-gray-400">Transforme visitas em clientes todos os dias.</p>
             </div>
 
         </div>
     </section>
 
-    <!-- Sobre Mim -->
-    <section class="py-16 px-6">
-        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <!-- 🔥 NOVA SEÇÃO PORTFÓLIO -->
+    <section id="portfolio" class="py-20 px-6 bg-gray-900">
+        <div class="max-w-6xl mx-auto">
 
-            <!-- Foto -->
-            <div class="flex justify-center">
-                <img src="src/2.png" alt="Yuri Rocha"
-                    class="w-48 md:w-64 rounded-2xl border border-gray-800 shadow-lg hover:scale-105 transition duration-300">
+            <h2 class="text-4xl font-bold text-center mb-12 text-green-400">
+                Meus Projetos
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Projeto -->
+                <div class="bg-black p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+
+                    <h3 class="text-xl font-normal mb-4">Sites para Psicólogos</h3>
+                    <!-- <img src="src/1.png"> -->
+                    <div class="relative flex justify-center items-center">
+                        <img src="src/1.png">
+                    </div>
+                    <a href="https://devyrocha.github.io/psicologa-klicyaqueiroz/" target="_blank" class="text-sm md:text-base text-green-500 font-semibold 
+    hover:text-green-400 transition duration-200">
+                        Ver mais
+                    </a>
+                </div>
+
+                <div class="bg-black p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+
+                    <h3 class="text-xl font-normal mb-4">Sites para Dentistas</h3>
+                    <!-- <img src="src/1.png"> -->
+                    <div class="relative flex justify-center items-center">
+
+                        <img src="src/2.png">
+                    </div>
+                    <a href="https://devyrocha.github.io/dentista-hugo/" target="_blank" class="text-sm md:text-base text-green-500 font-semibold 
+    hover:text-green-400 transition duration-200">
+                        Ver mais
+                    </a>
+                </div>
+
+                <div class="bg-black p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+
+                    <h3 class="text-xl font-normal mb-4">Site para Clinicas de Estética</h3>
+                    <!-- <img src="src/1.png"> -->
+                    <div class="relative flex justify-center items-center">
+
+                        <img src="src/6.png">
+                    </div>
+                    <a href="https://devyrocha.github.io/site-estetica/" target="_blank" class="text-sm md:text-base text-green-500 font-semibold 
+    hover:text-green-400 transition duration-200">
+                        Ver mais
+                    </a>
+                </div>
+
             </div>
 
-            <!-- Texto -->
-            <div>
-                <h2 class="text-3xl font-bold mb-4 text-green-400">Quem está por trás</h2>
-                <p class="text-gray-400 mb-4">
-                    Meu nome é Yuri Rocha e eu ajudo negócios locais a saírem do anonimato e começarem a atrair clientes
-                    todos os dias através de sites profissionais e estratégicos. </p>
-                <p class="text-gray-400 mb-4">
-                    A verdade é que hoje não basta apenas estar no Instagram. Se o seu negócio não transmite confiança e
-                    não aparece da forma certa, você acaba perdendo clientes para concorrentes que parecem mais
-                    profissionais.
-                </p>
-                <p class="text-gray-400 mb-4">
-                    Por isso, meu trabalho não é apenas criar sites — é desenvolver uma presença digital que posiciona o
-                    seu negócio, aumenta sua autoridade e faz com que mais pessoas escolham você.
-                </p>
-                <p class="text-gray-400">
-                    Se você quer parar de depender apenas de indicação e começar a ter um fluxo constante de clientes,
-                    eu posso te ajudar a dar esse próximo passo.
-                </p>
+            <!-- ------ -->
+
+            <div class="grid md:grid-cols-3 gap-12 mt-12">
+                <!-- Projeto -->
+
+                <div class="bg-black p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+
+                    <h3 class="text-xl font-normal mb-4">Site para Barbearias</h3>
+                    <!-- <img src="src/1.png"> -->
+                    <div class="relative flex justify-center items-center">
+
+                        <img src="src/5.png">
+                    </div>
+                    <a href="https://devyrocha.github.io/barbearia-emy/" target="_blank" class="text-sm md:text-base text-green-500 font-semibold 
+    hover:text-green-400 transition duration-200">
+                        Ver mais
+                    </a>
+                </div>
+
+                <div class="bg-black p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+
+                    <h3 class="text-xl font-normal mb-4">Site para Personal Trainer</h3>
+                    <!-- <img src="src/1.png"> -->
+                    <div class="relative flex justify-center items-center">
+
+                        <img src="src/8.png">
+                    </div>
+                    <a href="#" target="_blank" class="text-sm md:text-base text-green-500 font-semibold 
+    hover:text-green-400 transition duration-200">
+                        Ver mais
+                    </a>
+                </div>
+
+                <div class="bg-black p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+
+                    <h3 class="text-xl font-normal mb-4">Site para Lava Jatos</h3>
+                    <!-- <img src="src/1.png"> -->
+
+                    <div class="relative flex justify-center items-center">
+
+                        <img src="src/7.png">
+                    </div>
+                    <a href="https://devyrocha.github.io/lavajato-castelo/" target="_blank" class="text-sm md:text-base text-green-500 font-semibold 
+    hover:text-green-400 transition duration-200">
+                        Ver mais
+                    </a>
+                </div>
+
             </div>
 
         </div>
     </section>
 
-    <!-- Como Funciona -->
-    <section class="py-16 px-6 bg-gray-900">
-        <h2 class="text-3xl font-bold text-center mb-10 text-green-400">Como funciona</h2>
-        <div class="grid md:grid-cols-4 gap-6 text-center">
-
-            <div class="p-6 border border-gray-800 rounded-2xl hover:scale-105 transition duration-300">
-                <div class="text-4xl mb-2">📲</div>
-                <h3 class="font-semibold mb-1">Contato</h3>
-                <p class="text-gray-400 text-sm">Você me chama e me conta sobre seu negócio</p>
-            </div>
-
-            <div class="p-6 border border-gray-800 rounded-2xl hover:scale-105 transition duration-300">
-                <div class="text-4xl mb-2">🧠</div>
-                <h3 class="font-semibold mb-1">Análise</h3>
-                <p class="text-gray-400 text-sm">Entendo seu público e estratégia ideal</p>
-            </div>
-
-            <div class="p-6 border border-gray-800 rounded-2xl hover:scale-105 transition duration-300">
-                <div class="text-4xl mb-2">💻</div>
-                <h3 class="font-semibold mb-1">Criação</h3>
-                <p class="text-gray-400 text-sm">Desenvolvo seu site profissional e otimizado</p>
-            </div>
-
-            <div class="p-6 border border-gray-800 rounded-2xl hover:scale-105 transition duration-300">
-                <div class="text-4xl mb-2">🚀</div>
-                <h3 class="font-semibold mb-1">Resultado</h3>
-                <p class="text-gray-400 text-sm">Seu negócio pronto para atrair clientes</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- CTA Final -->
+    <!-- CTA -->
     <section id="contato" class="text-center py-20 px-6">
-        <h2 class="text-3xl font-bold mb-6 bg-gradient-to-r from-green-400 to-green-600 text-transparent bg-clip-text">
+        <h2 class="text-3xl font-bold mb-6 text-green-400">
             Quantos clientes você já perdeu hoje?
         </h2>
-        <p class="text-gray-400 mb-8">Tenha um site profissional e comece a atrair clientes todos os dias.</p>
+        <p class="text-gray-400 mb-8">Tenha um site profissional e comece a atrair clientes.</p>
         <a href="https://wa.me/5511925356630"
-            class="bg-green-500 px-8 py-4 rounded-xl text-black font-semibold hover:scale-105 transition duration-300 inline-block">
+            class="bg-green-500 px-8 py-4 rounded-xl text-black font-semibold hover:scale-105 transition">
             Quero mais clientes
         </a>
     </section>
 
-    <!-- Footer -->
     <footer class="text-center py-6 border-t border-gray-800 text-gray-500">
-        © 2026 Yuri Rocha - Todos os direitos reservados
+        © 2026 Yuri Rocha
     </footer>
 
 </body>
